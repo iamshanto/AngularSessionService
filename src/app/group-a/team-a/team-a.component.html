@@ -1,0 +1,17 @@
+<div class="col-md-6">
+
+  <div class="panel panel-primary">
+    <div class="panel-heading">Team A</div>
+    <div class="panel-body form-group">
+      <label>Write Message Here: <input class="form-control" #msg></label>
+
+      <h5>Messages ({{logMessages.length}})</h5>
+      <ul><li *ngFor="let msg of logMessages">{{msg}}</li></ul>
+    </div>
+    <div class="panel-footer">
+      <button class="btn btn-primary" (click)="onLog(msg.value)">Log Message</button>
+      <button class="btn btn-success" (click)="onStore(msg.value)">Store Message</button>
+    </div>
+  </div>
+
+</div>

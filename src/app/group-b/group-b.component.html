@@ -1,0 +1,7 @@
+<button (click)="showTeamC=!showTeamC">Show/Hide Team C</button>
+<button (click)="showTeamD=!showTeamD">Show/Hide Team D</button>
+
+<div class="row">
+  <team-c *ngIf="showTeamC"></team-c>
+  <team-d *ngIf="showTeamD"></team-d>
+</div>
